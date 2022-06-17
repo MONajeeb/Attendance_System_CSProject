@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../Scripts/Registeration.js" type="module"></script>
+    <script src="../Scripts/Login.js" type="module"></script>
+
+    <link rel="stylesheet" href="../Styles/Homestyle.css">
+
+</head>
+
+<body>
+    <form id="Reg" class="fo" action="./Scripts/conformregis.js" method="get">
+        <p>First time user?</p>
+        <div class="input_control">
+            <label for="Firstname">First name:</label><input type="text" name="Firstname" id="Firstname" />
+            <div class="error"></div>
+        </div>
+        <div class="input_control">
+            <label for="Lastname">Last name:</label><input type="text" name="Lastname" id="Lastname" />
+            <div class="error"></div>
+        </div>
+        <div class="input_control">
+            <label for="Adress">Adress:</label><input type="text" name="Adress" id="Adress" />
+            <div class="error"></div>
+        </div>
+        <div class="input_control">
+            <label for="Email">Email:</label><input type="text" name="Email" id="Email" />
+            <div class="error"></div>
+        </div>
+        <div class="input_control">
+            <label for="Age">Age:</label><input type="text" name="Age" id="Age" />
+            <div class="error"></div>
+        </div>
+        <div class="input_control">
+            <button type="submit" class="registerbtn" id="reg">Register</button>
+            <div class="error"></div>
+        </div>
+    </form>
+
+    <form id="Login" action="./Scripts/conformlog.js" method="get"></br>
+        <p>Already registered?</p>
+        <div class="input_control">
+            <label for="Username">User name:</label><input type="text" name="Username" id="Username"
+                placeholder="Username" />
+            <div class="error"></div>
+        </div>
+        <div class="input_control">
+            <label for="Password">Password:</label><input type="password" name="Age" id="Password"
+                placeholder="Password" />
+            <div class="error"></div>
+        </div>
+        <div class="input_control">
+            <button type="submit" id="log">Login</button>
+            <div class="error"></div>
+        </div>
+    </form>
+</body>
+
+</html>
